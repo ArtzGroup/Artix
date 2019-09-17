@@ -1,0 +1,80 @@
+@import "../../assets/Scss/color-variables";
+
+.headerSection {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.07),
+    0 5px 15px 0 rgba(142, 142, 142, 0.01);
+
+  .headerWrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .artix-logo {
+      margin: 10px;
+    }
+    .artixName {
+      font-size: 50px;
+      font-weight: bold;
+      font-family: sans-serif;
+      cursor: pointer;
+
+      .artixNameA {
+        color: $artixPrimaryBlue;
+      }
+      .artixNameR {
+        color: $artixPrimaryBlue;
+      }
+      .artixNameT {
+        color: $artixPrimaryBlue;
+      }
+      .artixNameI {
+        color: $artixPrimaryBrownDark;
+      }
+      .artixNameX {
+        color: $artixPrimaryBrownDark;
+      }
+      .artixName-Group {
+      }
+    }
+
+    .headerItemsWrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      right: 40px;
+      height: 100%;
+      min-width: 100px;
+
+      .homeButton {
+        height: 100%;
+        min-width: 50px;
+        width: auto;
+        font-size: 30px;
+        background: transparent;
+        color: $artixPrimaryBlue;
+        border: none;
+        margin-right: 20px;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      .opportunitiesButton {
+        height: 100%;
+        min-width: 50px;
+        font-size: 30px;
+        width: auto;
+        background: transparent;
+        color: $artixPrimaryBlue;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+      }
+    }
+  }
+}
