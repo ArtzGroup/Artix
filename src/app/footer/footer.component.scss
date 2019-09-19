@@ -1,0 +1,10 @@
+@import "../../assets/Scss/color-variables";
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  background: $artixPrimaryBlue;
+}

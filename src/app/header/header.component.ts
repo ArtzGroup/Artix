@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router, ActivatedRoute, ParamMap } from "@angular/router";
 
 declare var particlesJS: any;
 
@@ -8,7 +9,7 @@ declare var particlesJS: any;
   styleUrls: ["./header.component.scss"]
 })
 export class HeaderComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
     particlesJS.load(
@@ -16,5 +17,16 @@ export class HeaderComponent implements OnInit {
       "../../assets/ParticleJs-Configs/particlesjs-config-header.json",
       null
     );
+  }
+
+  gotoHome() {
+    console.log("hit");
+    this.router.navigate(["/artixhome"]);
+  }
+
+  gotoOpportunities() {
+    console.log("hit2");
+
+    this.router.navigate(["/opportunities"]);
   }
 }
