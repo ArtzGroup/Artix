@@ -5,11 +5,14 @@
   justify-content: center;
   z-index: 998;
   margin-top: 60px;
+  height: 70vh;
+
   .brand-image {
     flex: 2;
     height: auto;
     min-height: 80px;
-    max-height: 450px;
+    min-width: 50%;
+    width: auto;
   }
 
   .haveTalent {
@@ -17,7 +20,7 @@
     height: auto;
     .flip-card-inner {
       .flip-card-front {
-        background-color: #353839;
+        background-color: #284a71;
         border-radius: 4px;
       }
       .flip-card-back {
@@ -37,7 +40,7 @@
     height: auto;
     .flip-card-inner {
       .flip-card-front {
-        background-color: #353839;
+        background-color: #284a71;
         border-radius: 4px;
       }
       .flip-card-back {
@@ -86,9 +89,45 @@
 }
 
 .artixAboutUs {
-  background: $artixVeryLightBrown;
+  // background: $artixVeryLightBrown;
   min-height: 80px;
   height: 450px;
+  padding: 5px 2px;
+  border-radius: 10px;
+  box-shadow: inset -10px -1px 12px 0px rgba(0, 0, 0, 0.08);
+
+  .aboutusWrapper {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+
+    .playParticles {
+      width: 40%;
+      height: 100%;
+      background: $artixPrimaryBlue;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .aboutusText {
+      padding: 30px 100px;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h2 {
+        font-size: 40px;
+        margin: 0;
+        color: $artixPrimaryBrownDark;
+      }
+
+      p {
+        line-height: 28px;
+        font-size: 22px;
+      }
+    }
+  }
 }
 
 .artixOpportunities {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 
+declare var particlesJS: any;
 @Component({
   selector: "artix-home",
   templateUrl: "./artix-home.component.html",
@@ -8,5 +9,11 @@ import { Component, OnInit } from "@angular/core";
 export class ArtixHomeComponent implements OnInit {
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    particlesJS.load(
+      "particle-js",
+      "../../assets/ParticleJs-Configs/particlesjs-config-blueBg.json",
+      null
+    );
+  }
 }

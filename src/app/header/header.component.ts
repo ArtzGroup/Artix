@@ -20,13 +20,10 @@ export class HeaderComponent implements OnInit {
   }
 
   gotoHome() {
-    console.log("hit");
     this.router.navigate(["/artixhome"]);
   }
 
   gotoOpportunities() {
-    console.log("hit2");
-
     this.router.navigate(["/opportunities"]);
   }
 }
