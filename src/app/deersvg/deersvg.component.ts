@@ -9,4 +9,7 @@ export class DeersvgComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  currentClass: string = "front";
+  cubeface: string[] = ["top", "bottom", "left", "right", "front", "back"];
 }

@@ -8,19 +8,30 @@ import { ArtixHomeComponent } from "./artix-home/artix-home.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatButtonModule } from "@angular/material/button";
 import { MatButtonToggleModule, MatIconModule } from "@angular/material";
-import { OpportunitiesComponent } from './opportunities/opportunities.component';
-import { FooterComponent } from './footer/footer.component';
-import { DeersvgComponent } from './deersvg/deersvg.component';
+import { OpportunitiesComponent } from "./opportunities/opportunities.component";
+import { FooterComponent } from "./footer/footer.component";
+import { DeersvgComponent } from "./deersvg/deersvg.component";
+import { MatRadioModule } from "@angular/material/radio";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, ArtixHomeComponent, OpportunitiesComponent, FooterComponent, DeersvgComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    ArtixHomeComponent,
+    OpportunitiesComponent,
+    FooterComponent,
+    DeersvgComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatButtonToggleModule,
-    MatIconModule
+    MatIconModule,
+    MatRadioModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

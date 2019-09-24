@@ -11,7 +11,7 @@ export class ArtixHomeComponent implements OnInit {
 
   ngOnInit() {
     particlesJS.load(
-      "particle-js",
+      "aboutArtix",
       "../../assets/ParticleJs-Configs/particlesjs-config-blueBg.json",
       null
     );
