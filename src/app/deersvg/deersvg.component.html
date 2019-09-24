@@ -1,17 +1,17 @@
 <div class="scene">
   <div class="cube" [ngClass]="currentClass">
-    <div class=" cube__face cube__face--front">front</div>
-    <div class="cube__face cube__face--back">back</div>
-    <div class="cube__face cube__face--right">right</div>
-    <div class="cube__face cube__face--left">left</div>
-    <div class="cube__face cube__face--top">top</div>
-    <div class="cube__face cube__face--bottom">bottom</div>
+    <div class=" cube__face cube__face--front">FDev</div>
+    <div class="cube__face cube__face--back">BDev</div>
+    <div class="cube__face cube__face--right">Tester</div>
+    <div class="cube__face cube__face--left">Designer</div>
+    <div class="cube__face cube__face--top">PM</div>
+    <div class="cube__face cube__face--bottom">FsDev</div>
   </div>
 </div>
 
 <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="currentClass">
-  <mat-radio-button *ngFor="let face of cubeface" [value]="face">
+  <mat-radio-button *ngFor="let face of cubeface" [value]="face" style="margin: 10px;">
     {{face}}
   </mat-radio-button>
 </mat-radio-group>
-<div>Your favorite season is: {{currentClass}}</div>
+<!-- <div>Your favorite season is: {{currentClass}}</div> -->

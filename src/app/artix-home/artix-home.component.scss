@@ -39,12 +39,12 @@
       }
     }
 
-    &:hover {
-      .flip-card-inner {
-        transform: rotateY(-180deg);
-        transition-delay: 0.2s;
-      }
-    }
+    // &:hover {
+    //   .flip-card-inner {
+    //     transform: rotateY(-180deg);
+    //     transition-delay: 0.2s;
+    //   }
+    // }
   }
 
   .needExperience {
@@ -61,8 +61,8 @@
 
         .needExperienceText {
           flex: 3;
-          font-size: 40px;
-          padding: 30px;
+          font-size: 30px;
+          padding: 18px;
           text-align: left;
           color: #fff;
           font-weight: 500;
@@ -86,12 +86,12 @@
       }
     }
 
-    &:hover {
-      .flip-card-inner {
-        transform: rotateY(180deg);
-        transition-delay: 0.2s;
-      }
-    }
+    // &:hover {
+    //   .flip-card-inner {
+    //     transform: rotateY(180deg);
+    //     transition-delay: 0.2s;
+    //   }
+    // }
   }
 
   .flip-card {
@@ -131,16 +131,17 @@
   min-height: 80px;
   height: 530px;
   display: flex;
+  flex-direction: row;
   // box-shadow: inset -10px -1px 12px 0px rgba(0, 0, 0, 0.08);
 
   .aboutusWrapper {
+    width: 60%;
     padding: 30px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     h2 {
-
       margin: 0;
       font-size: 42px;
       font-weight: bold;
@@ -152,6 +153,11 @@
       margin: 12px 0;
     }
   }
+
+  .particles {
+    width: 40%;
+    height: 100%;
+  }
 }
 
 
@@ -160,12 +166,21 @@
   min-height: 80px;
   height: 530px;
   display: flex;
+  flex-direction: row;
+
+  .cube {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .opportunitiesWrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 40%;
+    // margin-left: 40%;
+    width: 60%;
     padding: 50px 100px;
 
     h2 {
