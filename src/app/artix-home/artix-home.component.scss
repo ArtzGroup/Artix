@@ -252,3 +252,66 @@
     }
   }
 }
+
+.landingDisplay {
+  display: flex;
+  flex-direction: row;
+  height: 480px;
+  width: 100%;
+  margin-top: 60px;
+
+  .welcomeTextWrapper {
+    position: absolute;
+    left: 20%;
+    z-index: 9999;
+    max-width: 40%;
+
+
+    .welcomeText {
+      font-weight: 900;
+      font-size: 5.5em;
+      color: #fff;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #06667f;
+
+      .letter {
+        display: inline-block;
+        line-height: 1em;
+      }
+    }
+  }
+
+  .rectDisplay {
+    height: 100%;
+    margin: 0 2px;
+    width: 15%;
+  }
+
+  .rectDisplay1 {
+    background: #06667f;
+  }
+
+  .rectDisplay2 {
+    background: $purple;
+  }
+
+  .rectDisplay3 {
+    background: $green;
+  }
+
+  .rectDisplay4 {
+    background: $orange;
+  }
+
+  .rectDisplay5 {
+    background: $greenishCoolyellow;
+  }
+
+  .rectDisplay6 {
+    background: $greenishCoolBlue;
+  }
+
+  .rectDisplay7 {
+    background: #784e06;
+  }
+}

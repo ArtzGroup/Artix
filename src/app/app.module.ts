@@ -13,6 +13,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { DeersvgComponent } from "./deersvg/deersvg.component";
 import { MatRadioModule } from "@angular/material/radio";
 import { FormsModule } from "@angular/forms";
+import { AngularTiltModule } from "angular-tilt";
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FormsModule } from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    AngularTiltModule,
     MatButtonModule,
     MatButtonToggleModule,
     MatIconModule,
