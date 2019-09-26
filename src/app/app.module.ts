@@ -17,7 +17,7 @@ import {
   PopupDialog
 } from "./opportunities/opportunities.component";
 import { FooterComponent } from "./footer/footer.component";
-import { DeersvgComponent, Cube } from "./deersvg/deersvg.component";
+import { DeersvgComponent } from "./deersvg/deersvg.component";
 import { MatRadioModule } from "@angular/material/radio";
 import { FormsModule } from "@angular/forms";
 import { AngularTiltModule } from "angular-tilt";
@@ -30,10 +30,9 @@ import { AngularTiltModule } from "angular-tilt";
     OpportunitiesComponent,
     FooterComponent,
     DeersvgComponent,
-    PopupDialog,
-    Cube
+    PopupDialog
   ],
-  entryComponents: [PopupDialog, Cube],
+  entryComponents: [PopupDialog],
   imports: [
     BrowserModule,
     AppRoutingModule,
