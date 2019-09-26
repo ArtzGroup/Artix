@@ -7,10 +7,17 @@ import { HeaderComponent } from "./header/header.component";
 import { ArtixHomeComponent } from "./artix-home/artix-home.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatButtonModule } from "@angular/material/button";
-import { MatButtonToggleModule, MatIconModule } from "@angular/material";
-import { OpportunitiesComponent } from "./opportunities/opportunities.component";
+import {
+  MatButtonToggleModule,
+  MatIconModule,
+  MatDialogModule
+} from "@angular/material";
+import {
+  OpportunitiesComponent,
+  PopupDialog
+} from "./opportunities/opportunities.component";
 import { FooterComponent } from "./footer/footer.component";
-import { DeersvgComponent } from "./deersvg/deersvg.component";
+import { DeersvgComponent, Cube } from "./deersvg/deersvg.component";
 import { MatRadioModule } from "@angular/material/radio";
 import { FormsModule } from "@angular/forms";
 import { AngularTiltModule } from "angular-tilt";
@@ -22,8 +29,11 @@ import { AngularTiltModule } from "angular-tilt";
     ArtixHomeComponent,
     OpportunitiesComponent,
     FooterComponent,
-    DeersvgComponent
+    DeersvgComponent,
+    PopupDialog,
+    Cube
   ],
+  entryComponents: [PopupDialog, Cube],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -33,7 +43,8 @@ import { AngularTiltModule } from "angular-tilt";
     MatButtonToggleModule,
     MatIconModule,
     MatRadioModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

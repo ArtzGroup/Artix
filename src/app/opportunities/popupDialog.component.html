@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>Hi,</h1>
+<p>So, you want to be a <strong>{{name}}</strong></p>
+<div mat-dialog-content>
+    <p>Please Send your Resume to <a href="mailto:admin@artixtechnologies.com">admin@artixtechnologies.com</a></p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">No Thanks</button>
+    <button mat-button [mat-dialog-close] cdkFocusInitial>Ok</button>
+</div>
