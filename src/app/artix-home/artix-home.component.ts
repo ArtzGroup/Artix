@@ -21,32 +21,32 @@ export class ArtixHomeComponent implements OnInit {
       null
     );
 
-    var textWrapper = document.querySelector(".welcomeText");
-    textWrapper.innerHTML = textWrapper.textContent.replace(
-      /\S/g,
-      "<span class='letter'>$&</span>"
-    );
+    // var textWrapper = document.querySelector(".welcomeText");
+    // textWrapper.innerHTML = textWrapper.textContent.replace(
+    //   /\S/g,
+    //   "<span class='letter'>$&</span>"
+    // );
 
-    var animation = anime
-      .timeline({ loop: true })
-      .add({
-        targets: ".welcomeText .letter",
-        scale: [4, 1],
-        opacity: [0, 1],
-        translateZ: 0,
-        easing: "easeOutExpo",
-        duration: 950,
-        delay: (el, i) => 70 * i
-      })
-      .add({
-        targets: ".welcomeText",
-        opacity: 0,
-        duration: 1000,
-        easing: "easeOutExpo",
-        delay: 1000
-      });
-    setTimeout(() => {
-      animation.pause();
-    }, 5000);
+    // var animation = anime
+    //   .timeline({ loop: true })
+    //   .add({
+    //     targets: ".welcomeText .letter",
+    //     scale: [4, 1],
+    //     opacity: [0, 1],
+    //     translateZ: 0,
+    //     easing: "easeOutExpo",
+    //     duration: 950,
+    //     delay: (el, i) => 70 * i
+    //   })
+    //   .add({
+    //     targets: ".welcomeText",
+    //     opacity: 0,
+    //     duration: 1000,
+    //     easing: "easeOutExpo",
+    //     delay: 1000
+    //   });
+    // setTimeout(() => {
+    //   animation.pause();
+    // }, 5000);
   }
 }

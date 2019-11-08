@@ -2,25 +2,11 @@ import { Component, OnInit } from "@angular/core";
 import anime from "animejs/lib/anime.es.js";
 
 @Component({
-  selector: "app-deersvg",
-  templateUrl: "./deersvg.component.html",
-  styleUrls: ["./deersvg.component.scss"]
-})
-export class DeersvgComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-
-  currentClass: string = "front";
-  cubeface: string[] = ["top", "bottom", "left", "right", "front", "back"];
-}
-
-@Component({
-  selector: "cube",
+  selector: "app-cube",
   templateUrl: "./cube.component.html",
   styleUrls: ["./cube.component.scss"]
 })
-export class Cube implements OnInit {
+export class CubeComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {

@@ -17,10 +17,11 @@ import {
   PopupDialog
 } from "./opportunities/opportunities.component";
 import { FooterComponent } from "./footer/footer.component";
-import { DeersvgComponent } from "./deersvg/deersvg.component";
+import { DeersvgComponent, Cube } from "./deersvg/deersvg.component";
 import { MatRadioModule } from "@angular/material/radio";
 import { FormsModule } from "@angular/forms";
 import { AngularTiltModule } from "angular-tilt";
+import { CubeComponent } from './cube/cube.component';
 
 @NgModule({
   declarations: [
@@ -30,9 +31,11 @@ import { AngularTiltModule } from "angular-tilt";
     OpportunitiesComponent,
     FooterComponent,
     DeersvgComponent,
-    PopupDialog
+    PopupDialog,
+    Cube,
+    CubeComponent
   ],
-  entryComponents: [PopupDialog],
+  entryComponents: [PopupDialog, Cube],
   imports: [
     BrowserModule,
     AppRoutingModule,

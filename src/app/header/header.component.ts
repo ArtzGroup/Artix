@@ -21,9 +21,11 @@ export class HeaderComponent implements OnInit {
 
   gotoHome() {
     this.router.navigate(["/artixhome"]);
+    window.scrollTo(0, 0);
   }
 
   gotoOpportunities() {
     this.router.navigate(["/opportunities"]);
+    window.scrollTo(0, 0);
   }
 }

@@ -9,7 +9,7 @@ body {
 .scene {
   width: 200px;
   height: 200px;
-  border: 1px solid #CCC;
+  // border: 1px solid #CCC;
   margin: 80px;
   perspective: 400px;
 }
@@ -60,27 +60,50 @@ body {
 }
 
 .cube__face--front {
-  background: hsla(0, 100%, 50%, 0.7);
+  background-image: url('../../assets/Images/designer.png');
+  background-size: 100% 100%;
+  border-radius: 50px;
+  border: 10px solid white;
 }
 
 .cube__face--right {
-  background: hsla(60, 100%, 50%, 0.7);
+  // background: hsla(60, 100%, 50%, 0.7);
+  background-image: url('../../assets/Images/frontend.png');
+  background-size: 100% 100%;
+  border-radius: 50px;
+  border: 10px solid white;
 }
 
 .cube__face--back {
-  background: hsla(120, 100%, 50%, 0.7);
+  background-image: url('../../assets/Images/backend.jpg');
+  // background: hsla(120, 100%, 50%, 0.7);
+  border-radius: 50px;
+  background-size: 100% 100%;
+  border: 10px solid white;
 }
 
 .cube__face--left {
-  background: hsla(180, 100%, 50%, 0.7);
+  background-image: url('../../assets/Images/pmanager.jpg');
+  // background: hsla(180, 100%, 50%, 0.7);
+  border-radius: 50px;
+  background-size: 100% 100%;
+  border: 10px solid white;
 }
 
 .cube__face--top {
-  background: hsla(240, 100%, 50%, 0.7);
+  background-image: url('../../assets/Images/tester.png');
+  // background: hsla(240, 100%, 50%, 0.7);
+  border-radius: 50px;
+  background-size: 100% 100%;
+  border: 10px solid white;
 }
 
 .cube__face--bottom {
-  background: hsla(300, 100%, 50%, 0.7);
+  background-image: url('../../assets/Images/fullstack.jpeg');
+  // background: hsla(300, 100%, 50%, 0.7);
+  background-size: 100% 100%;
+  border-radius: 50px;
+  border: 10px solid white;
 }
 
 .cube__face--front {
