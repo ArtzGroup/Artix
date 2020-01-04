@@ -1,6 +1,8 @@
 .opportunitesSection {
   margin: 80px;
   display: flex;
+  align-items: center;
+  flex-direction: column;
 
   .opportunitiesWrapper {
     display: flex;

@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import anime from "animejs/lib/anime.es.js";
 
 @Component({
-  selector: "app-cube",
+  selector: "de",
   templateUrl: "./cube.component.html",
   styleUrls: ["./cube.component.scss"]
 })

@@ -128,12 +128,16 @@
 
 .artixAboutUs {
   background: $artixLightBlue;
-  min-height: 80px;
-  height: 530px;
+  min-height: 530px;
+  height: auto;
   display: flex;
   flex-direction: row;
   // box-shadow: inset -10px -1px 12px 0px rgba(0, 0, 0, 0.08);
 
+  .deer {
+    position: relative;
+    top: -40px;
+  }
   .aboutusWrapper {
     width: 60%;
     padding: 30px 100px;
@@ -158,13 +162,18 @@
     width: 40%;
     height: 80%;
   }
-}
 
+  .joinUs {
+    cursor: pointer;
+    color: #0c498f;
+    text-decoration: underline;
+  }
+}
 
 .artixOpportunities {
   background: $artixVeryLightRed;
-  min-height: 80px;
-  height: 530px;
+  min-height: 530px;
+  height: auto;
   display: flex;
   flex-direction: row;
 
@@ -194,17 +203,22 @@
       margin: 12px 0;
     }
 
-    ul {
-      .designerOpportunity {
-        margin: 40px 0 0 60px;
-        font-size: 30px;
-        font-weight: bold;
-      }
+    .opportunitieswrap {
+      display: flex;
+      flex-direction: row;
 
-      .developerOpportunity {
-        margin: 20px 0 0 60px;
-        font-weight: bold;
-        font-size: 30px;
+      ul {
+        .designerOpportunity {
+          margin: 40px 0 0 60px;
+          font-size: 30px;
+          font-weight: bold;
+        }
+
+        .developerOpportunity {
+          margin: 20px 0 0 60px;
+          font-weight: bold;
+          font-size: 30px;
+        }
       }
     }
   }
@@ -212,8 +226,8 @@
 
 .artixContactUs {
   background: $artixLightReddishBlue;
-  min-height: 80px;
-  height: 530px;
+  min-height: 530px;
+  height: auto;
   display: flex;
   align-items: center;
 
@@ -252,7 +266,6 @@
     }
   }
 
-
   .particles {
     width: 40%;
     height: 80%;
@@ -271,7 +284,6 @@
     left: 20%;
     z-index: 9998;
     max-width: 40%;
-
 
     .welcomeText {
       font-weight: 900;
@@ -319,5 +331,80 @@
 
   .rectDisplay7 {
     background: #784e06;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .landingDisplay {
+    height: 300px;
+    .welcomeTextWrapper {
+      max-width: initial;
+      left: 20px;
+
+      .welcomeText {
+        font-size: 3.5em;
+      }
+    }
+  }
+
+  .artixAboutUs {
+    flex-direction: column;
+
+    .aboutusWrapper {
+      width: auto;
+      padding: 40px;
+    }
+
+    .deer {
+      top: 0;
+      left: 0;
+
+      deer {
+        svg {
+          height: 350px;
+          width: 330px;
+        }
+      }
+    }
+  }
+
+  .artixOpportunities {
+    flex-direction: column;
+
+    .cube {
+      width: 100%;
+    }
+    .opportunitiesWrapper {
+      width: auto;
+      padding: 40px;
+
+      .opportunitieswrap {
+        ul {
+          margin: 0;
+          padding: 0;
+
+          .designerOpportunity,
+          .developerOpportunity {
+            margin: 40px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .artixContactUs {
+    flex-direction: column;
+
+    .contactusWrapper {
+      padding: 40px;
+      width: auto;
+    }
+
+    .particles{
+      width: auto;
+      height: 100%;
+      min-height: 430px;
+    }
   }
 }

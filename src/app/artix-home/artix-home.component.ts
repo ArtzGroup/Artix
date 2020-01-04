@@ -49,4 +49,8 @@ export class ArtixHomeComponent implements OnInit {
     //   animation.pause();
     // }, 5000);
   }
+
+  scroll(el: HTMLElement) {
+    el.scrollIntoView({behavior: 'smooth'});
+}
 }

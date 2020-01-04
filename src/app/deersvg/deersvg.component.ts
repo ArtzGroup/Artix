@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import anime from "animejs/lib/anime.es.js";
 
 @Component({
-  selector: "app-deersvg",
+  selector: "cube",
   templateUrl: "./deersvg.component.html",
   styleUrls: ["./deersvg.component.scss"]
 })
@@ -16,7 +16,7 @@ export class DeersvgComponent implements OnInit {
 }
 
 @Component({
-  selector: "cube",
+  selector: "deer",
   templateUrl: "./cube.component.html",
   styleUrls: ["./cube.component.scss"]
 })
