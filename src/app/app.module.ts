@@ -10,7 +10,8 @@ import { MatButtonModule } from "@angular/material/button";
 import {
   MatButtonToggleModule,
   MatIconModule,
-  MatDialogModule
+  MatDialogModule,
+  MatMenuModule
 } from "@angular/material";
 import {
   OpportunitiesComponent,
@@ -46,7 +47,8 @@ import { CubeComponent } from './cube/cube.component';
     MatIconModule,
     MatRadioModule,
     FormsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

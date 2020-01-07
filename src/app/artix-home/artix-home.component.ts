@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef } from "@angular/core";
 import anime from "animejs/lib/anime.es.js";
+import { NgAnimateScrollService } from 'ng-animate-scroll';
 
 // import "vanilla-tilt";
 // declare var VanillaTilt;
@@ -12,7 +13,7 @@ declare var particlesJS: any;
   styleUrls: ["./artix-home.component.scss"]
 })
 export class ArtixHomeComponent implements OnInit {
-  constructor(public el: ElementRef) {}
+  constructor(public el: ElementRef, private animateScrollService: NgAnimateScrollService) {}
 
   ngOnInit() {
     particlesJS.load(
@@ -50,7 +51,7 @@ export class ArtixHomeComponent implements OnInit {
     // }, 5000);
   }
 
-  scroll(el: HTMLElement) {
-    el.scrollIntoView({behavior: 'smooth'});
+  navigateTocontactUS(duration?:number) {
+    this.animateScrollService.scrollToElement('target', duration)
 }
 }

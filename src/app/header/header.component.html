@@ -2,10 +2,10 @@
   <div class="headerWrapper">
     <!-- <img class="artix-logo" src="../../favicon.ico"> -->
     <a class="artixName" routerLink="/artixhome">
-      <span class="artixNameA">A</span>
+      <span class="artixNameA">a</span>
       <span class="artixNameR">r</span>
       <span class="artixNameT">t</span>
-      <span class="artixNameX">x</span>
+      <span class="artixNameX">X</span>
       <!-- <span class="artixName-Group">
         - Group
       </span> -->
@@ -18,8 +18,20 @@
       <button mat-button class="opportunitiesButton" (click)="gotoOpportunities()">
         Opportunities
       </button>
-
-
+      <button mat-button [matMenuTriggerFor]="menu" class="menuBars">
+          <i class="fas fa-bars"></i>
+      </button>
     </div>
-  </div>
+    <mat-menu #menu="matMenu">
+       <button mat-menu-item (click)="gotoHome()">
+          Home
+        </button>
+        <button mat-menu-item (click)="gotoOpportunities()">
+          Opportunities
+        </button>
+        <button mat-menu-item (click)="navigateTocontactUS()">
+            Contact Us
+          </button>
+    </mat-menu>
+</div>
 </section>

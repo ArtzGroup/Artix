@@ -68,3 +68,27 @@
     }
   }
 }
+
+
+@media only screen and (max-width: 762px) {
+
+  .opportunitesSection{
+    margin: 80px 20px;
+    .opportunitiesWrapper{
+      .opportunities{
+        .tilesWrapper, .tilesWrapper2{
+          flex-direction: column;
+          align-self: center;
+
+          .opportunitiesTiles{
+            margin: 20px 0;
+          }
+        }
+      }
+      .applynowButton {
+        min-width: 200px;
+        width: auto !important;
+      }
+    }
+  }
+}

@@ -53,7 +53,7 @@
       Artx is a company started for providing web applications and software solutions for our Users. We are also a product company, we build new applications that are essential for people.
       We provide the best user experience in our products by using the latest technologies. Our goal is to provide useful and essential applications with great user experience.
       Our visionary is more focused on facilitating things more creatively and conviniently. We find and encourage new talents and ideas.
-      <strong><a class="joinUs" (click)="scroll(target)">Join us</a></strong> to discover more.
+      <strong><a class="joinUs" (click)="navigateTocontactUS()">Join us</a></strong> to discover more.
     </p>
   </div>
   
@@ -104,7 +104,7 @@
   
 </section>
 
-<section #target class="artixContactUs">
+<section autoscroll="true" id="target" class="artixContactUs">
   <div class="contactusWrapper">
     <h2>
       Contact Us
