@@ -1,14 +1,14 @@
 @import "../../assets/Scss/color-variables";
 
 .headerSection {
-  position: fixed;
+  position: absolute;
   top: 0;
   display: flex;
   align-items: center;
   width: 100%;
   height: 60px;
   background: $artixLightBlue;
-  z-index: 9999;
+  z-index: 3;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2),
     0 5px 15px 0 rgba(142, 142, 142, 0.02);
 
@@ -82,5 +82,52 @@
         font-weight: 600;
       }
     }
+
+    .menuBars{
+      display: none;
+    }
   }
+}
+
+/deep/
+.mat-menu-panel{
+  background: $artixPrimaryBlue;
+}
+
+.mat-menu-item{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+@media only screen and (max-width: 762px) {
+  .headerSection {
+
+    .headerWrapper {
+      .headerItemsWrapper {
+        justify-content: unset;
+        position: absolute;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+        .homeButton {
+          display: none;
+        }
+
+        .opportunitiesButton{
+          display: none;
+        }
+
+        .menuBars{
+          display: block;
+          i{
+            font-size: 28px;
+          }
+        }
+      }
+    }
+
+  }
+
 }

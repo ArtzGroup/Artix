@@ -4,16 +4,16 @@
       "value": 80,
       "density": {
         "enable": true,
-        "value_area": 1600
+        "value_area": 800
       }
     },
     "color": {
-      "value": "#062a78"
+      "value": "#9864d3"
     },
     "shape": {
       "type": "circle",
       "stroke": {
-        "width": 0,
+        "width": 0.5,
         "color": "#000000"
       },
       "polygon": {
@@ -48,13 +48,13 @@
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#062a78",
-      "opacity": 0.4,
-      "width": 1
+      "color": "#9864d3",
+      "opacity": 0.6,
+      "width": 1.5
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 3,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -82,9 +82,9 @@
     },
     "modes": {
       "grab": {
-        "distance": 400,
+        "distance": 100,
         "line_linked": {
-          "opacity": 1
+          "opacity": 0.5
         }
       },
       "bubble": {

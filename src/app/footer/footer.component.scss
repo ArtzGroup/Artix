@@ -5,4 +5,12 @@
   height: auto;
   min-height: 60px;
   background: $artixPrimaryBlue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .copyright {
+    margin: 0;
+    color: #ffffff;
+  }
 }
