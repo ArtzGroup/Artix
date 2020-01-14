@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import anime from "animejs/lib/anime.es.js";
 
 @Component({
@@ -10,9 +10,9 @@ export class DeersvgComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-
+  @Input()
   currentClass: string = "front";
-  cubeface: string[] = ["top", "bottom", "left", "right", "front", "back"];
+  //cubeface: string[] = ["top", "bottom", "left", "right", "front", "back"];
 }
 
 @Component({

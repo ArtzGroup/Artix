@@ -33,15 +33,17 @@
 
 <section class="landingDisplay">
   <div class="welcomeTextWrapper">
-    <h1 class="welcomeText">Welcome to Artx</h1>
+    <h1 class="welcomeText">A Startup Company with a enthusiastic team developing Web and mobile Applications.</h1>
   </div>
-  <div aTilt class="rectDisplay rectDisplay1"></div>
+  <!-- <div aTilt class="rectDisplay rectDisplay1"></div>
   <div aTilt class="rectDisplay rectDisplay2"></div>
   <div aTilt class="rectDisplay rectDisplay3"></div>
   <div aTilt class="rectDisplay rectDisplay4"></div>
   <div aTilt class="rectDisplay rectDisplay5"></div>
   <div aTilt class="rectDisplay rectDisplay6"></div>
-  <div aTilt class="rectDisplay rectDisplay7"></div>
+  <div aTilt class="rectDisplay rectDisplay7"></div> -->
+
+  <!-- <img src="../../assets/Images/landingImage.jpg" alt="landingImage"> -->
 </section>
 
 <!-- AboutUs section -->
@@ -63,8 +65,9 @@
 </section>
 <section class="artixOpportunities">
     <div class="cube">
-      <cube></cube>
-      </div>
+      <!-- <cube [currentClass] = "currentClas"></cube> -->
+    <!-- <img src="../../assets/Images/laptpoImage.jpg" alt="colloboration">   -->
+    </div>
   <div class="opportunitiesWrapper">
     <h2>
       Opportunities
@@ -76,28 +79,33 @@
     <span class="opportunitieswrap">
       <ul>
         <li class="designerOpportunity">
-          <a>
+          <a (click)="onSelectPosition(front)">
             Designer
           </a>
         </li>
         <li class="developerOpportunity">
-          <a>
+          <a (click)="onSelectPosition(back)">
             Developer
           </a>
         </li>
       </ul>
       <ul>
         <li class="designerOpportunity">
-          <a>
+          <a (click)="onSelectPosition(top)">
             Tester
           </a>
         </li>
         <li class="developerOpportunity">
-          <a>
+          <a (click)="onSelectPosition(left)">
             Project Manager
           </a>
         </li>
       </ul>
+      <!-- <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="currentClas">
+          <mat-radio-button *ngFor="let face of cubeface" [value]="face" style="margin: 10px;">
+            {{face}}
+          </mat-radio-button>
+        </mat-radio-group> -->
     </span>
   </div>
   
@@ -133,6 +141,7 @@
         </a>
       </span>
     </span>
+
   </div>
   <div class="particles" id="aboutArtix">
   </div>

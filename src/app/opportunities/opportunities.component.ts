@@ -26,7 +26,8 @@ export class OpportunitiesComponent implements OnInit {
 
   openDialog(value): void {
     const dialogRef = this.dialog.open(PopupDialog, {
-      data: { passedValue: value }
+      data: { passedValue: value },
+      disableClose: true
     });
     dialogRef.afterClosed().subscribe(result => {
       console.log("The dialog was closed");
@@ -49,5 +50,16 @@ export class PopupDialog {
 
   onNoClick(): void {
     this.dialogRef.close();
+  }
+
+  onOkClick(){
+      if (window.confirm('Did you Submit the Form?'))
+    {
+      this.dialogRef.close();
+    }
+    else
+    {
+      return false;
+    }
   }
 }

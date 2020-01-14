@@ -1,9 +1,12 @@
 <h1 mat-dialog-title>Hi,</h1>
 <p>So, you want to be a <strong>{{name}}</strong></p>
 <div mat-dialog-content>
-    <p>Please Send your Resume to <a href="mailto:admin@artixtechnologies.com">admin@artixtechnologies.com</a></p>
+    <p>Please Send your Resume to <a href="mailto:admin@artixtechnologies.com">admin@artixtechnologies.com</a> and fill out this form to let us know more about you.
+    </p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSerwTjFZNk07ti_IxOlbw-Sb6rwVed5rhef8FQH4hBADqcJSQ/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </div>
 <div mat-dialog-actions>
-    <button mat-button (click)="onNoClick()">No Thanks</button>
-    <button mat-button [mat-dialog-close] cdkFocusInitial>Ok</button>
+    <button mat-button (click)="onNoClick()" style="background-color:rgb(153, 50, 50); color: white;">No Thanks</button>
+    <button mat-button cdkFocusInitial (click)="onOkClick()" style="background-color:mediumaquamarine; color: white;">Ok</button>
+    <span style="color: red; margin-left:10px;">*</span> Form submit button is at the end of the form.
 </div>

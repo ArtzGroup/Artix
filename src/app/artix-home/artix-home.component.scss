@@ -171,11 +171,14 @@
 }
 
 .artixOpportunities {
-  background: $artixVeryLightRed;
-  min-height: 530px;
+  // background: $artixVeryLightRed;
+  background-image: url("../../assets/Images/laptpoImage.jpg");
+  min-height: 680px;
   height: auto;
   display: flex;
   flex-direction: row;
+  background-size: cover;
+  align-items: center;
 
   .cube {
     width: 40%;
@@ -188,24 +191,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: rgba(0, 0, 0, 0.45);
     // margin-left: 40%;
     width: 60%;
-    padding: 50px 100px;
+    padding: 30px;
+    border-radius: 50px;
+    margin-right: 10px;
 
     h2 {
       margin: 0;
       font-size: 42px;
       font-weight: bold;
+      color: #fff;
     }
 
     .opportunitiesText {
       font-size: 24px;
       margin: 12px 0;
+      color: #fff;
+
     }
 
     .opportunitieswrap {
       display: flex;
       flex-direction: row;
+      color: #fff;
+
 
       ul {
         .designerOpportunity {
@@ -225,15 +236,19 @@
 }
 
 .artixContactUs {
-  background: $artixLightReddishBlue;
-  min-height: 530px;
+  // background: $artixLightReddishBlue;
+  background-image: url("../../assets/Images/contact.png");
+  min-height: 600px;
   height: auto;
   display: flex;
   align-items: center;
+  background-size: cover;
+  background-position: bottom center;
 
   .contactusWrapper {
-    padding: 30px 100px;
+    padding: 30px;
     width: 60%;
+    color: #dadada;
 
     h2 {
       margin: 0;
@@ -275,22 +290,29 @@
 .landingDisplay {
   display: flex;
   flex-direction: row;
-  height: 480px;
+  min-height: 680px;
+  height: auto;
+  align-items: center;
+  justify-content: flex-end;
   width: 100%;
   margin-top: 60px;
+  background-image: url("../../assets/Images/landingImage.png");
+  background-size: cover;
+  
 
   .welcomeTextWrapper {
-    position: absolute;
-    left: 20%;
+    // position: absolute;
+    // left: 20%;
     z-index: 1;
     max-width: 40%;
 
     .welcomeText {
-      font-weight: 900;
-      font-size: 5.5em;
+      line-height: 80px;
+      font-weight: 100;
+      font-size: 60px;
       color: #fff;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: #06667f;
+      // -webkit-text-stroke-width: 1px;
+      // -webkit-text-stroke-color: #06667f;
 
       .letter {
         display: inline-block;
@@ -337,12 +359,16 @@
 @media only screen and (max-width: 800px) {
   .landingDisplay {
     height: 250px;
+    background-position: unset;
     .welcomeTextWrapper {
       max-width: initial;
       left: 20px;
 
       .welcomeText {
-        font-size: 3.5em;
+        font-size: 50px;
+        line-height: 80px;
+        font-weight: 100;
+        margin: 0 10px;
       }
     }
   }
@@ -362,6 +388,8 @@
 
   .artixOpportunities {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     .cube {
       width: 100%;
@@ -369,6 +397,7 @@
     .opportunitiesWrapper {
       width: auto;
       padding: 40px 20px;
+      margin: 10px;
 
       .opportunitieswrap {
         ul {

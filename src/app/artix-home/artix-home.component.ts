@@ -15,6 +15,9 @@ declare var particlesJS: any;
 export class ArtixHomeComponent implements OnInit {
   constructor(public el: ElementRef, private animateScrollService: NgAnimateScrollService) {}
 
+  currentClas: string = "front";
+  cubeface: string[] = ["top", "bottom", "left", "right", "front", "back"];
+
   ngOnInit() {
     particlesJS.load(
       "aboutArtix",
@@ -53,5 +56,9 @@ export class ArtixHomeComponent implements OnInit {
 
   navigateTocontactUS(duration?:number) {
     this.animateScrollService.scrollToElement('target', duration)
+}
+
+onSelectPosition(currentClas : string){
+  this.currentClas = currentClas;
 }
 }
